@@ -1,7 +1,7 @@
 """
 Reads and prints the full text of a book from a local file.
 """
-from stats import total_words
+from stats import total_words, total_chars
 
 
 def get_book_text(filepath):
@@ -14,6 +14,6 @@ def get_book_text(filepath):
 def main():
     # Path is relative to the working directory, not this file
     contents = get_book_text("books/frankenstein.txt")
-    print(total_words(contents))
+    print(total_chars(contents))
 
 main()
