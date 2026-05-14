@@ -14,6 +14,7 @@ def get_book_text(filepath):
 def main():
     # Path is relative to the working directory, not this file
     contents = get_book_text("books/frankenstein.txt")
+    print(total_words(contents))
     print(total_chars(contents))
 
 main()
