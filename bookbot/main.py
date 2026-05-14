@@ -1,6 +1,8 @@
 """
 Reads and prints the full text of a book from a local file.
 """
+from stats import total_words
+
 
 def get_book_text(filepath):
     # Automatically closes the file after reading
@@ -8,9 +10,6 @@ def get_book_text(filepath):
         contents = f.read()
     return contents
 
-def total_words(contents):
-    words = contents.split()
-    return f"Found {len(words)} total words"
 
 def main():
     # Path is relative to the working directory, not this file
