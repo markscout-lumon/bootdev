@@ -1,0 +1,12 @@
+{
+  "name": "Boot.dev Go Environment",
+  "image": "mcr.microsoft.com/devcontainers/universal:latest",
+  "postCreateCommand": "go install github.com/bootdotdev/bootdev@latest && echo 'export PATH=$PATH:$HOME/go/bin' >> ~/.bashrc",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "golang.go"
+      ]
+    }
+  }
+}
